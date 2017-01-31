@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<link href="./styles/jquery.contextMenu.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="./styles/site.css" />
+</head>
+<body>
+	<p class="delete-button"><img src="./images/trash.png"></p>
+	<div class="container">
+		<div class="row header">
+			<div class="col-xs-2 col-sm-2 col-md-2">
+				<img src="./images/email-logo.png" class="image" alt="email logo" align="middle" width="95px" height="95px">
+			</div>
+			<div class="col-xs-10 col-sm-10 col-md-10">
+				<div class="project" >
+					Project: <input type="text" name="txtProject" />  
+					<a href="./#">Save</a>
+				</div><br/>
+				
+				<div class="subwaymap">
+					<div role="tablist" class="wizardbar">
+						<a class="nav1 wizardbar-item active"  href="#template-section" aria-controls="template-section" role="tab" data-toggle="tab">
+							Structure Template
+						</a>
+						<a class="nav2 wizardbar-item" href="#content-section" aria-controls="content-section" role="tab" data-toggle="tab">
+							Content
+						</a>
+						<a class="nav3 wizardbar-item"  href="#styling-section" aria-controls="styling-section" role="tab" data-toggle="tab">
+							Styling
+						</a>
+						<a class="nav4 wizardbar-item" href="#publish-section" aria-controls="publish-section" role="tab" data-toggle="tab">
+							Publish
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div role="tabpanel active" class="tab-pane fade" id="template-section">
+					<div class="content">
+						<div id="template" class="col-xs-2 col-sm-2 col-md-2 toolbar"><div>Drag Templates:</div></div>
+						<div class="col-xs-10 col-sm-10 col-md-10 workspace">
+							<div id="email1" class="page"></div>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane fade" id="content-section">
+					<div class="content">
+						<div id="component" class="col-xs-2 col-sm-2 col-md-2 toolbar"><div>Drag A Components:</div></div>
+						<div class="col-xs-10 col-sm-10 col-md-10 workspace">
+							<div id="email2" class="page"></div>
+						</div>
+					</div>
+
+				</div>
+				<div role="tabpanel" class="tab-pane fade" id="styling-section">
+
+					<div class="content">
+						<div id="styling" class="col-xs-2 col-sm-2 col-md-2 toolbar">
+							<div>Select an object:</div>
+							<br/>
+							<div><input class="jscolor" value="ab2567"></div>
+						</div>
+						<div class="col-xs-10 col-sm-10 col-md-10 workspace">
+							<div id="email3" class="page"></div>
+						</div>
+					</div>
+
+				</div>
+				<div role="tabpanel" class="tab-pane fade" id="publish-section">
+
+					<div class="content">
+						<div id="publish" class="col-xs-2 col-sm-2 col-md-2 toolbar">
+							<div>Preview:</div><br/>
+							<div><a href="#" id="emailView">Email View</a></div>
+							<div><a href="#" id="viewCode">View Code</a></div>
+							<div><a href="#" id="export">Export</a></div>
+						</div>
+						<div class="col-xs-10 col-sm-10 col-md-10 workspace">
+							<div id="email4" class="page"></div>
+							<div id="emailCode" class="code"></div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" ></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src='//cdn.tinymce.com/4/tinymce.min.js'></script>
+	<script src="./scripts/vendor/context-menu/jquery.contextMenu.js"></script>
+	<script src="./scripts/context-menu/contextMenu.js"></script>
+	<script src="./scripts/exportTemplate/exportTemplate.js"></script>
+	<script src="./scripts/jscolor/jscolor.min.js"></script>
+	<script src="./scripts/site.js"></script>
+	<script src="./scripts/jsLoader.js"></script>
+	<script src="./templates/templates.js"></script>
+	<script class="changebleJS" src="./components/components.js"></script>
+</body>
+</html>
